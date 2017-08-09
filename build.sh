@@ -3,6 +3,7 @@
 # VERSION is 223
 . /etc/profile.d/modules.sh
 module add ci
+module add gcc/${GCC_VERSION}
 module add root/${ROOT_VERSION}-gcc-${GCC_VERSION}
 module add hepmc
 module  add  boost/1.63.0-gcc-${GCC_VERSION}-mpi-1.8.8
