@@ -21,7 +21,7 @@ cd ${WORKSPACE}/${NAME}${VERSION}
 
 make install
 echo "Creating the modules file directory ${LIBRARIES_MODULES}"
-mkdir -p ${LIBRARIES_MODULES}/${NAME}
+mkdir -p ${HEP}/${NAME}
 (
 cat <<MODULE_FILE
 #%Module1.0
@@ -43,4 +43,4 @@ MODULE_FILE
 ) > ${HEP}/${NAME}/${VERSION}-root-${ROOT_VERSION}
 
 module avail ${NAME}
-module add ${NAM}/${VERSION}-root-${ROOT_VERSION}
+module add ${NAME}/${VERSION}-root-${ROOT_VERSION}
