@@ -10,7 +10,7 @@ module add python/2.7.13-gcc-${GCC_VERSION}
 cd ${WORKSPACE}/${NAME}${VERSION}/examples
 ./runmains
 echo $?
-
+cd ${WORKSPACE}/${NAME}${VERSION}
 make install
 mkdir -p ${REPO_DIR}
 mkdir -p modules

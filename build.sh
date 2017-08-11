@@ -1,6 +1,6 @@
 #!/bin/bash -e
 # NAME is pythia8
-# VERSION is 223
+# VERSION is 228
 . /etc/profile.d/modules.sh
 module add ci
 module add gcc/${GCC_VERSION}
